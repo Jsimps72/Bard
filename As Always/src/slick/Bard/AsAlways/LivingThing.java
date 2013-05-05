@@ -27,4 +27,19 @@ public class LivingThing {
 	//In every case, all living things will inherit a name of some sort (even the player)
 	private String name = null;
 	
+	
+	//Here are the getter and setter methods for each of the variables in livingthings 
+	public Image getImage(){
+		return image;
+	}
+	public void setImage(Image image){
+		this.image = image;
+	}
+	public String getName(){
+		return name;
+	}
+	public void setName(String name){
+		this.name = name;
+	}
+	
 }
