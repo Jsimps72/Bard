@@ -23,16 +23,24 @@ public class LivingThing {
 	//SRC: http://stackoverflow.com/questions/4716040/does-subclasses-inherit-private-fields
 	
 	//In every case, all living things will inherit an image to be displayed on the screen.
-	private Image image = null;
+	private Image[] image = null;
 	//In every case, all living things will inherit a name of some sort (even the player)
 	private String name = null;
 	
+	/*********************************************
+	*			LivingThing Constructor 
+	 *********************************************/
+	public LivingThing(Image front, Image back, Image left, Image right)
+	{
+		//The constructor will take the front, back, left, and right images as a parameter and assign them to image
+		image = new Image[]{front, back, left, right};
+	}
 	
 	//Here are the getter and setter methods for each of the variables in livingthings 
-	public Image getImage(){
+	public Image[] getImage(){
 		return image;
 	}
-	public void setImage(Image image){
+	public void setImage(Image[] image){
 		this.image = image;
 	}
 	public String getName(){

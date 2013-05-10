@@ -9,7 +9,6 @@
 package slick.Bard.AsAlways;
 
 //Here are all our imports that will be needed for the main class
-import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
